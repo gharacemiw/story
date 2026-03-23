@@ -37,7 +37,7 @@ export default async function PostPage({ params }: { params: Promise<{ category:
   const formatted = new Date(post.date + 'T12:00:00').toLocaleDateString('pt-BR', { day: '2-digit', month: 'long', year: 'numeric' })
 
   return (
-    <div className="max-w-reading mx-auto px-6 py-16 md:py-24">
+    <div className="max-w-reading mx-auto px-6 py-10 md:py-24">
       <nav className="mb-10">
         <Link href={`/pt-br/${category}`} className="font-sans text-sm text-warm-muted dark:text-dark-muted hover:text-warm-text dark:hover:text-dark-text transition-colors">
           ← {categoryLabels[category]}

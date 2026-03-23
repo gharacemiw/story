@@ -7,7 +7,7 @@ export const metadata: Metadata = { title: 'Poemas' }
 export default function PoemasPage() {
   const posts = getPostsByCategory('pt-br', 'poemas')
   return (
-    <div className="max-w-layout mx-auto px-6 py-16">
+    <div className="max-w-layout mx-auto px-6 py-8 md:py-16">
       <header className="mb-4 pb-4">
         <h1 className="font-serif text-4xl md:text-5xl font-bold tracking-tight">Poemas</h1>
         <p className="text-warm-muted dark:text-dark-muted mt-2 font-sans">{posts.length} {posts.length === 1 ? 'texto publicado' : 'textos publicados'}</p>
