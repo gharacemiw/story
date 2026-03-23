@@ -31,22 +31,6 @@ export default function HomePage() {
 
       <Divider />
 
-      {poemas.length > 0 && (
-        <section className="max-w-layout mx-auto px-6 py-8">
-          <div className="flex items-baseline justify-between mb-6">
-            <h2 className="font-serif text-3xl md:text-4xl font-bold text-warm-text dark:text-dark-text">Poemas</h2>
-            <Link href="/pt-br/poemas" className="font-sans text-sm px-3 py-1.5 rounded bg-warm-accent dark:bg-dark-accent text-warm-bg dark:text-dark-bg hover:bg-warm-text dark:hover:bg-dark-text dark:hover:text-dark-bg hover:scale-105 transition-all duration-150 ease-out">
-              Ver todos →
-            </Link>
-          </div>
-          <div className="flex flex-col gap-3">
-            {poemas.map(post => <PostCard key={post.slug} {...post} locale="pt-br" href={`/pt-br/poemas/${post.slug}`} />)}
-          </div>
-        </section>
-      )}
-
-      <Divider />
-
       {contos.length > 0 && (
         <section className="max-w-layout mx-auto px-6 py-8">
           <div className="flex items-baseline justify-between mb-6">
@@ -57,6 +41,22 @@ export default function HomePage() {
           </div>
           <div className="flex flex-col gap-3">
             {contos.map(post => <PostCard key={post.slug} {...post} locale="pt-br" href={`/pt-br/contos/${post.slug}`} />)}
+          </div>
+        </section>
+      )}
+
+      <Divider />
+
+      {poemas.length > 0 && (
+        <section className="max-w-layout mx-auto px-6 py-8">
+          <div className="flex items-baseline justify-between mb-6">
+            <h2 className="font-serif text-3xl md:text-4xl font-bold text-warm-text dark:text-dark-text">Poemas</h2>
+            <Link href="/pt-br/poemas" className="font-sans text-sm px-3 py-1.5 rounded bg-warm-accent dark:bg-dark-accent text-warm-bg dark:text-dark-bg hover:bg-warm-text dark:hover:bg-dark-text dark:hover:text-dark-bg hover:scale-105 transition-all duration-150 ease-out">
+              Ver todos →
+            </Link>
+          </div>
+          <div className="flex flex-col gap-3">
+            {poemas.map(post => <PostCard key={post.slug} {...post} locale="pt-br" href={`/pt-br/poemas/${post.slug}`} />)}
           </div>
         </section>
       )}

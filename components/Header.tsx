@@ -61,11 +61,11 @@ export default function Header({ locale }: { locale: Locale }) {
         <Link href={base} className={navLinkClass}>
           {tr.navHome}
         </Link>
-        <Link href={`${base}/${tr.routePoems}`} className={navLinkClass}>
-          {tr.navPoems}
-        </Link>
         <Link href={`${base}/${tr.routeStories}`} className={navLinkClass}>
           {tr.navStories}
+        </Link>
+        <Link href={`${base}/${tr.routePoems}`} className={navLinkClass}>
+          {tr.navPoems}
         </Link>
         <Link href={`${base}/${tr.routeHallucinations}`} className={navLinkClass}>
           {tr.navHallucinations}
