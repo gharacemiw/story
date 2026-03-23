@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-warm-bg: #F5F2EC;
+  --color-warm-card: #F0EDE7;
+  --color-warm-text: #1A1A1A;
+  --color-warm-muted: #6B6B6B;
+  --color-warm-border: #E5E2DC;
+  --color-warm-accent: #2D6A4F;
+  --color-dark-bg: #0D0D0D;
+  --color-dark-surface: #1A1A1A;
+  --color-dark-text: #E8E8E0;
+  --color-dark-muted: #888880;
+  --color-dark-border: #2A2A2A;
+  --color-dark-accent: #C9973A;
+
+  --font-serif: "Literata", Georgia, serif;
+  --font-sans: "Outfit", system-ui, sans-serif;
+
+  --max-width-reading: 68ch;
+  --max-width-layout: 1100px;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-outfit), system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .prose-reading {
+    font-family: var(--font-literata), Georgia, serif;
+    font-size: 20px;
+    line-height: 1.8;
+  }
+
+  .prose-reading p {
+    margin-bottom: 1.5em;
+  }
+
+  .prose-reading p:first-child {
+    margin-top: 0;
+  }
+
+  .prose-reading em {
+    font-style: italic;
+  }
+
+}
+
+.prose-reading img {
+  display: block;
+  width: 60%;
+}
+
+.prose-reading hr {
+  width: 25%;
+  margin: 1.5em auto;
+  border: none;
+  border-top: 1px solid #aaa;
+}

@@ -1,0 +1,27 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls:*)",
+      "Bash(npm run:*)",
+      "WebFetch(domain:www.anthropic.com)",
+      "Bash(node:*)",
+      "Bash(cd:*)",
+      "Bash(where pdfimages:*)",
+      "Bash(head:*)",
+      "Bash(identify \"/c/Users/Gustavo/projetos/meu-site/public/ilustracao-correndo.png\")",
+      "Bash(npx claude-code-templates@latest --skill development/code-reviewer)",
+      "Bash(mkdir -p content/pt-br)",
+      "Bash(mv content/contos content/pt-br/)",
+      "Bash(mv content/poemas content/pt-br/)",
+      "Bash(mv content/alucinacoes content/pt-br/)",
+      "Bash(mkdir -p content/en/stories content/en/poems content/en/hallucinations)",
+      "Bash(npx next:*)",
+      "Bash(find C:UsersGustavoprojetosmeu-site -type f \\\\\\(-name *desenho* -o -name *drawing* \\\\\\))",
+      "Bash(grep -r \"desenho\\\\|drawing\" C:/Users/Gustavo/projetos/meu-site/app --include=*.tsx --include=*.ts)",
+      "Bash(grep -r \"desenho\\\\|drawing\" C:/Users/Gustavo/projetos/meu-site/components --include=*.tsx --include=*.ts)",
+      "Bash(grep -r \"desenho\\\\|drawing\" C:/Users/Gustavo/projetos/meu-site --include=*.json --include=*.config.*)",
+      "Bash(xargs grep:*)",
+      "Bash(python3 -c \":*)"
+    ]
+  }
+}
