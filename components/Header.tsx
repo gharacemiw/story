@@ -30,9 +30,9 @@ export default function Header({ locale }: { locale: Locale }) {
 
   return (
     <header className="sticky top-0 z-50 bg-warm-text dark:bg-dark-surface">
-      {/* Masthead: spacer | name | controls */}
+      {/* Masthead: name left on mobile, centered on desktop | controls right */}
       <div className="max-w-layout mx-auto px-6 pt-4 pb-3 flex items-center">
-        <div className="flex-1" />
+        <div className="hidden md:block md:flex-1" />
         <Link
           href={base}
           className="font-serif font-bold text-base md:text-lg tracking-wide text-warm-bg dark:text-dark-text hover:opacity-70 transition-opacity duration-300 ease-[cubic-bezier(0.16,1,0.3,1)]"

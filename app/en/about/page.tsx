@@ -7,7 +7,7 @@ export default function AboutPage() {
   return (
     <div>
       <div className="max-w-layout mx-auto px-6 pt-8 md:pt-12">
-        <Image src="/bio.png" alt="Author illustration" width={864} height={683} quality={100} className="w-[50%] mx-auto mb-2" />
+        <Image src="/bio.png" alt="Author illustration" width={864} height={683} quality={100} className="w-[85%] md:w-[50%] mx-auto mb-2" />
       </div>
       <div className="max-w-reading mx-auto px-6 py-4 md:py-6">
         <header className="mb-6 pb-4">

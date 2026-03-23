@@ -18,16 +18,16 @@ export default function NewsletterForm({ locale }: { locale: Locale }) {
 
   return (
     <section className="py-10">
-      <div className="max-w-layout mx-auto px-6 flex items-center gap-10">
+      <div className="max-w-layout mx-auto px-6 flex flex-col sm:flex-row items-center gap-6 sm:gap-10">
         <Image
           src="/mensageiro.png"
           alt="Mensageiro"
           width={400}
           height={400}
           quality={100}
-          className="w-36 md:w-44 hidden sm:block"
+          className="w-28 sm:w-36 md:w-44"
         />
-        <div className="flex-1">
+        <div className="flex-1 text-center sm:text-left">
           <h2 className="font-serif font-bold text-2xl md:text-3xl mb-3">{tr.newsletterTitle}</h2>
           <p className="text-warm-muted dark:text-dark-muted text-lg mb-6">{tr.newsletterSubtitle}</p>
           <p className="font-sans text-sm text-warm-muted dark:text-dark-muted italic font-bold">{tr.newsletterComingSoon}</p>
